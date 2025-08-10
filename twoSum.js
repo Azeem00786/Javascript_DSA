@@ -36,3 +36,17 @@ const nums = [3, 4, 5, 6];
 const target = 7;
 const result = solution.twoSum(nums, target);
 console.log("result--->", result); // Output: [0, 1]
+
+/* 
+  Approach Explanation:
+  1. We use a Map to store numbers we've seen and their indices
+  2. For each number in the array:
+     - Calculate what number we need to add to make target (complement)
+     - If we've seen that number before, we found our pair!
+     - If not, store current number and index in Map
+  3. Keep doing this until we find a pair or finish the array
+  
+  Example: If array is [3,4,5,6] and target is 7
+  - First number 3: Need 4 (7-3), haven't seen 4 yet, store 3
+  - Second number 4: Need 3 (7-4), found 3 in Map! Return [0,1]
+  */
