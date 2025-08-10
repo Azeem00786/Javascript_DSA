@@ -29,3 +29,10 @@ contacts.delete("Raymond"); // false
 contacts.delete("Jessie"); // true
 console.log(contacts.size); // 1
 */
+
+// Test the Solution
+const solution = new Solution();
+const nums = [3, 4, 5, 6];
+const target = 7;
+const result = solution.twoSum(nums, target);
+console.log("result--->", result); // Output: [0, 1]
